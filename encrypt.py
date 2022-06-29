@@ -4,4 +4,10 @@
 # Author : Christophe Lagaillarde
 # Version : 1.0
 
-def encrypt():
+import rsa
+
+
+def encrypt(message: str, public_key: rsa.key.PublicKey):
+
+    return rsa.encrypt(message.encode('ascii'), public_key)
+
