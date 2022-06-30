@@ -26,10 +26,6 @@ def main() -> None:
     decrypted_message = decrypt(encrypted_message, private_key)
     write_on_file('decrypted_file.txt', decrypted_message)
 
-    print(normal_message.decode('ascii'))
-    print(encrypted_message)
-    print(decrypted_message)
-
     return None
 
 
