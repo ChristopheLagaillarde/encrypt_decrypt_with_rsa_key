@@ -7,9 +7,9 @@
 import rsa
 
 
-def decrypt(ciphertext: bytes, private_key: rsa.key.PrivateKey):
+def decrypt(ciphertext: bytes, private_key: rsa.key.PrivateKey) -> bytes:
     try:
-        return rsa.decrypt(ciphertext, private_key).decode('ascii')
+        return rsa.decrypt(ciphertext, private_key)
 
     except:
         return False

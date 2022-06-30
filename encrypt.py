@@ -7,7 +7,7 @@
 import rsa
 
 
-def encrypt(message: str, public_key: rsa.key.PublicKey):
+def encrypt(data: bytes, public_key: rsa.key.PublicKey):
 
-    return rsa.encrypt(message.encode('ascii'), public_key)
+    return rsa.encrypt(data, public_key)
 
